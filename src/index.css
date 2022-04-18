@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #424242;
+  font-size: 12px;
+  background-color: #E5E5E5;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.LoginPage {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LoginPage__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background: url('assets/bg.png');
+  filter: blur(5px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+.Hotel__form {
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 32px;
+  width: 450px;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.Header {
+  padding: 0 15px;
+}
+
+.HomePage__grid {
+  display: grid;
+  grid-template-areas:
+    'filter main'
+    'fav main'
+  ;
+  grid-gap: 24px;
+  grid-template-columns: minmax(360px, 360px) 664px;
+  grid-template-rows: 410px 472px;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+@media (max-width: 1200px) {
+  .HomePage__grid {
+    grid-template-areas:
+      'filter '
+      'main'
+      'fav'
+    ;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content;
+  }
+}
+
+.HomePage__filter {
+  grid-area: filter;
+}
+
+.HomePage__main {
+  grid-area: main;
+}
+
+.HomePage__fav {
+  grid-area: fav;
+}
+
+.HomePage__block {
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 1.35rem;
+  height: 100%;
+  overflow: hidden;
+}
+
+.Main__header {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.HomePage__price {
+  font-size: .9rem;
+  color: #000;
+  font-weight: bold;
+}
+
+.HomePage__FavName {
+  font-size: .8rem;
+}
+
+.HomePage__favs {
+  min-height: 290px;
+}
