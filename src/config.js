@@ -5,6 +5,6 @@ export const options = { year: 'numeric', month: 'long', day: 'numeric' };
 export const RATE = "RATE"
 export const PRICE = "PRICE"
 export const FAV_ITEMS_LENGTH = 3
-export const pageDomain = '/test-hotel-liis-v2'
+export const pageDomain = '/test-hotel-liis-v2/'
 export const CARDS_PER_PAGE = 3
 export const MAX_FAVS = 15
