@@ -30,18 +30,21 @@ export const Main = () => {
             ? <Loader></Loader>
             :
             hotels?.message
-              ? <h1>{hotels?.message}</h1>
-              : (
-                hotels.map(hotel => {
-                  return (
-                    <HotelItem
-                      key={hotel.hotelId}
-                      hotel={hotel}
-                    >
-                    </HotelItem>
-                  )
-                })
-              )
+              ? <h1>Ничего не найдено</h1>
+              :
+              hotels.length === 0
+                ? <h1>Ничего не найдено</h1>
+                : (
+                  hotels.map(hotel => {
+                    return (
+                      <HotelItem
+                        key={hotel.hotelId}
+                        hotel={hotel}
+                      >
+                      </HotelItem>
+                    )
+                  })
+                )
         }
       </div>
     </div>
