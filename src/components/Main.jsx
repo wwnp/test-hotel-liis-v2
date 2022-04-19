@@ -11,7 +11,6 @@ export const Main = () => {
   const hotels = useSelector(store => store.homepage.hotels)
   const favs = useSelector(store => store.homepage.favs)
   const { date, location } = useSelector(store => store.homepage.request)
-
   return (
     <div>
       <div className='d-flex justify-between'>

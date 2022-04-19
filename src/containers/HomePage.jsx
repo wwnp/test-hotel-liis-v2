@@ -5,10 +5,7 @@ import { Header } from '../components/Header'
 import { Main } from '../components/Main'
 import { PagCom } from '../components/PagCom'
 
-
-
 export const HomePage = () => {
-
   return (
     <div className='HomePage'>
       <Header></Header>

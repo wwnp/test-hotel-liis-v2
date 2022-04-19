@@ -86,8 +86,6 @@ export function* watchNewsSaga() {
   }
 }
 
-
-
 export default function* rootSaga() {
   yield takeLatest(LOCATION_CHANGE, watchNewsSaga);
   yield takeLatest(SET_REQUEST, fetchHots);

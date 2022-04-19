@@ -31,22 +31,10 @@ export const Fav = () => {
   filtered.reverse()
 
   let out = filtered
-  // for (let i = 0; i < filtered.length; i++) {
-  //   const fav = favs[i];
-  //   if (i >= FAV_ITEMS_LENGTH) {
-  //     break
-  //   }
-  //   out.push({
-  //     ...fav
-  //   })
-  // }
-  console.log(out)
-  console.log(page)
   const indexLast = page * CARDS_PER_PAGE
   const indexFirst = indexLast - CARDS_PER_PAGE
 
   out = out.slice(indexFirst, indexLast)
-  // setOutPosts(posts.slice(indexFirst, indexLast))
 
   return (
     <>
